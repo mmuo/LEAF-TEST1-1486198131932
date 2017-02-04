@@ -1,0 +1,13 @@
+applications:
+- path: target/JavaHelloWorldApp.war
+  memory: 512M
+  instances: 1
+  domain: mybluemix.net
+  name: LEAF-TEST1
+  host: LEAF-TEST1
+  disk_quota: 1024M
+  services:
+  - Discovery-fv
+  - AlchemyAPI-x7
+  - Cloudant NoSQL DB-52
+  - Visual Recognition-0j
